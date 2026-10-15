@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of an Information Technology student.">
+    <title>Renelyn S. Maturingan | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="logo">Renelyn <span>S. Maturingan</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    INFORMATION TECHNOLOGY STUDENT
+                </p>
+
+                <h1>Hello, I'm <span class="gradient-text">Renelyn S. Maturingan</span></h1>
+
+                <h2>Student Developer & Creative Thinker</h2>
+
+                <p class="hero-description">
+                    I'm an Information Technology student who enjoys
+                    programming, designing user interfaces, and exploring
+                    new technologies. I'm constantly learning and building
+                    projects to improve my skills.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Projects
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/renjdjkys"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:maturinganrenelyn07@gmail.com"
+                       aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/2x2.jpg"
+                    alt="Profile photo of Renelyn S. Maturingan"
+                    class="profile-photo">
+            </div>
+        </section>
+
+        <section class="section container" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About <span class="gradient-text">Me</span></h2>
+                <p>A little introduction about who I am.</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <div>
+                    <h3>My Journey in IT</h3>
+                    <p>
+                        I am a Bachelor of Science in Information Technology
+                        student interested in software development,
+                        web technologies, and user interface design.
+                    </p>
+                    <p>
+                        Through academic activities and personal projects,
+                        I continue to develop my programming and
+                        problem-solving skills. I enjoy experimenting
+                        with new tools and turning ideas into working
+                        applications.
+                    </p>
+                </div>
+            </div>
+
+            <div class="skills">
+                <span><i class="fa-brands fa-html5"></i> HTML</span>
+                <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span><i class="fa-brands fa-react"></i> React</span>
+                <span><i class="fa-solid fa-mobile-screen"></i> Flutter</span>
+            </div>
+        </section>
+
+        <section class="section container" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">MY RECENT WORK</p>
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <p>Some of my academic development projects.</p>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <div class="project-visual visual-purple">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        <span>01 / REACT DEVELOPMENT</span>
+                    </div>
+
+                    <div class="project-info">
+                        <p class="project-type">ACADEMIC PROJECT</p>
+                        <h3>Formula 1 Driver Card</h3>
+                        <p>
+                            An interactive React application that displays
+                            an F1 driver card using component-based design
+                            and props. A form allows users to enter driver
+                            details and generate a customized card.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+
+                        <a href="#contact" class="project-link">
+                            Get in touch
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual visual-blue">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>02 / MOBILE DEVELOPMENT</span>
+                    </div>
+
+                    <div class="project-info">
+                        <p class="project-type">ACADEMIC PROJECT</p>
+                        <h3>Student Counter App</h3>
+                        <p>
+                            A Flutter application developed to practice
+                            mobile interface design and interactive
+                            widgets. The project explores Flutter layouts,
+                            buttons, and stateful user interface elements.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Android Studio</span>
+                        </div>
+
+                        <a href="#contact" class="project-link">
+                            Get in touch
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container footer-content">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Get in <span class="gradient-text">Touch.</span></h2>
+
+            <p>
+                I'm always open to learning, sharing ideas, and connecting
+                with people who are passionate about technology.
+            </p>
+
+            <a href="mailto:maturinganrenelyn07@gmail.com"
+               class="btn btn-primary">
+                <i class="fa-solid fa-envelope"></i>
+                Send Me an Email
+            </a>
+
+            <div class="footer-links">
+                <a href="mailto:maturinganrenelyn07@gmail.com">Email</a>
+                <a href="https://github.com/renjdjkys"
+                   target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Renelyn Maturingan.
+                   All rights reserved.</p>
+                <a href="#home">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
