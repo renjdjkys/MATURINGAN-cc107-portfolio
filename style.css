@@ -120,13 +120,17 @@ button {
     flex-shrink: 0;
     width: 42px;
     height: 42px;
+    padding: 0;
+    margin-left: auto;
     background: var(--surface-light);
     color: var(--text);
     border: 1px solid var(--border);
     border-radius: 10px;
+    font-size: 1.2rem;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.25s ease,
-                color 0.25s ease;
+    transition: background-color 0.25s ease,
+                color 0.25s ease,
+                transform 0.2s ease;
 }
 
 .theme-toggle:hover {
