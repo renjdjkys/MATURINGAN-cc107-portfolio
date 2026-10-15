@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.getElementById("theme-toggle");
     const pageRoot = document.documentElement;
 
-    // Load the saved theme. Use dark mode by default.a
+    // Load the saved theme. Use dark mode by default.
     let savedTheme = "dark";
 
     try {
