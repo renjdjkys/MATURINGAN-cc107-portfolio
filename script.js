@@ -15,32 +15,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Apply the selected theme and update the button icon.
-    function applyTheme(theme) {
-        const isLight = theme === "light";
-
-        pageRoot.setAttribute(
-            "data-theme",
-            isLight ? "light" : "dark"
-        );
-
-        // Show a moon in light mode and a sun in dark mode.
-        themeToggle.innerHTML = isLight
-            ? '<i class="fa-solid fa-moon" aria-hidden="true"></i>'
-            : '<i class="fa-solid fa-sun" aria-hidden="true"></i>';
-
-        // Update accessibility information for the button.
-        themeToggle.setAttribute(
-            "aria-label",
-            isLight ? "Switch to dark mode" : "Switch to light mode"
-        );
-
-        themeToggle.setAttribute("aria-pressed", String(isLight));
-
-        themeToggle.setAttribute(
-            "title",
-            isLight ? "Switch to dark mode" : "Switch to light mode"
-        );
-    }
+        function applyTheme(theme) {
+            const isLight = theme === "light";
+        
+            pageRoot.setAttribute(
+                "data-theme",
+                isLight ? "light" : "dark"
+            );
+        
+            // Use text symbols so the icons work even if Font Awesome fails.
+            themeToggle.textContent = isLight ? "🌙" : "☀️";
+        
+            themeToggle.setAttribute(
+                "aria-label",
+                isLight ? "Switch to dark mode" : "Switch to light mode"
+            );
+        
+            themeToggle.setAttribute("aria-pressed", String(isLight));
+            themeToggle.setAttribute(
+                "title",
+                isLight ? "Switch to dark mode" : "Switch to light mode"
+            );
+        }
 
     // Apply the saved theme when the website loads.
     applyTheme(savedTheme);
